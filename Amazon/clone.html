@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amazon Clone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+                                <!-- HEADER -->
+  <header>
+    <div class="logo">
+      <a href="#" onclick="location.reload()">
+        <img src="https://www.pngall.com/wp-content/uploads/15/Amazon-Logo-White-Transparent.png" alt="Amazon Logo">
+      </a>
+    </div>
+
+    <div class="search-box">
+      <input type="text" placeholder="Search Amazon...">
+      <button>🔍</button>
+    </div>
+
+    <nav class="top-nav">
+      <ul>
+        <li><a href="#">Return &amp; <b>Order</b></a></li>
+        <li><a href="#">Hello, Sign In<br><b>Account &amp; Lists</b></a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">🛒 Cart (<span id="cartCount">0</span>)</a></li>
+        <li><button id="darkModeBtn">🌙</button></li>
+      </ul>
+    </nav>
+  </header>
+
+                             <!-- SECONDARY NAV -->
+  <nav class="secondary-nav">
+    <ul>
+      <li><a href="#">☰ All</a></li>
+      <li><a href="#">Best Sellers</a></li>
+      <li><a href="#">Mobiles</a></li>
+      <li><a href="#">Fashion</a></li>
+      <li><a href="#">Electronics</a></li>
+      <li><a href="#">Prime</a></li>
+      <li><a href="#">Amazon Pay</a></li>
+      <li><a href="#">Customer Service</a></li>
+    </ul>
+  </nav>
+
+                          <!-- SLIDESHOW -->
+  <div class="slideshow-container">
+    <div class="slide"><img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=1600&auto=format&fit=crop" alt="Slide 1"></div>
+    <div class="slide"><img src="https://images.unsplash.com/photo-1550009158-9ebf69173e03?q=80&w=1600&auto=format&fit=crop" alt="Slide 2"></div>
+    <div class="slide"><img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?q=80&w=1600&auto=format&fit=crop" alt="Slide 3"></div>
+    <div class="slide"><img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=1600&auto=format&fit=crop" alt="Slide 4"></div>
+    <div class="slide"><img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=1600&auto=format&fit=crop" alt="Slide 5"></div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <div class="slide-dots">
+      <span class="dot" onclick="goToSlide(0)"></span>
+      <span class="dot" onclick="goToSlide(1)"></span>
+      <span class="dot" onclick="goToSlide(2)"></span>
+      <span class="dot" onclick="goToSlide(3)"></span>
+      <span class="dot" onclick="goToSlide(4)"></span>
+    </div>
+  </div>
+
+  <!-- FEATURED SECTION -->
+<h2 class="featured-title">⭐ Featured Today</h2>
+<section class="featuredProducts"></section>
+
+                          <!-- PRODUCTS -->
+  <h2 class="products-title">All Products on website</h2>
+  <section class="products"></section>
+
+
+
+<button id="back-to-top">↑ Top</button>
+
+
+                  <!-- FOOTER -->
+<footer class="amazon-footer">
+    <div class="footer-links">
+
+        <div class="footer-column">
+            <h3>Get to Know Us</h3>
+            <a href="#">About Us</a>
+            <a href="#">Careers</a>
+            <a href="#">Press Releases</a>
+            <a href="#">Amazon Science</a>
+        </div>
+
+        <div class="footer-column">
+            <h3>Connect with Us</h3>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+
+        <div class="footer-column">
+            <h3>Let Us Help You</h3>
+            <a href="#">Your Account</a>
+            <a href="#">Returns Centre</a>
+            <a href="#">100% Purchase Protection</a>
+            <a href="#">Help</a>
+        </div>
+
+    </div>
+
+    <div class="footer-copy">
+        <p>Conditions of Use & Sale | Privacy Notice | Interest-Based Ads</p>
+        <p>© 1996-2026, Amazon.com, Inc. or its affiliates</p>
+    </div>
+
+</footer>
+  <script src="script.js"></script>
+</body>
+</html>
